@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Segredo Tântrico | Escolha seu acesso</title>
+  <meta name="description" content="Escolha o treinamento ideal para você: técnicas para surpreender sua parceira ou seu parceiro." />
+  <style>
+    :root{
+      --bg:#050305;
+      --bg2:#14070b;
+      --red:#d82643;
+      --red2:#9f1229;
+      --gold:#f5d24b;
+      --gold2:#c89b25;
+      --text:#fff6f7;
+      --muted:#b9aeb2;
+      --line:rgba(216,38,67,.48);
+      --card:rgba(255,255,255,.045);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    body{
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 50% 36%, rgba(160,18,41,.30), transparent 26rem),
+        radial-gradient(circle at 50% 0%, rgba(245,210,75,.06), transparent 16rem),
+        linear-gradient(180deg,#080407 0%,#050305 58%,#0b0506 100%);
+    }
+    .topbar{
+      width:100%;background:linear-gradient(90deg,#9f1229,#d82643,#841427);
+      color:white;text-align:center;font-weight:900;text-transform:uppercase;letter-spacing:.02em;
+      padding:13px 12px;font-size:15px;box-shadow:0 5px 25px rgba(216,38,67,.35);position:relative;z-index:2;
+    }
+    .wrap{width:min(100%,850px);margin:0 auto;padding:72px 18px 28px;text-align:center;position:relative;z-index:1}
+    .brand{
+      font-family:Georgia, 'Times New Roman', serif;font-size:clamp(42px,7vw,68px);line-height:.95;
+      font-style:italic;font-weight:900;color:#ef3a58;text-shadow:0 0 30px rgba(216,38,67,.30);margin:0 0 24px;
+    }
+    h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,5.8vw,52px);line-height:1.08;margin:0 auto 18px;font-weight:900;letter-spacing:-.03em;max-width:850px}
+    h1 .gold{color:var(--gold);text-shadow:0 0 20px rgba(245,210,75,.2)}
+    .sub{max-width:620px;margin:0 auto 56px;color:var(--muted);font-size:clamp(17px,2vw,22px);line-height:1.65}
+    .question{font-family:Georgia,'Times New Roman',serif;font-size:clamp(26px,3.8vw,38px);font-weight:900;margin:0 0 34px;color:#fff}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:stretch;margin:0 auto 48px;max-width:760px}
+    .choice{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:245px;text-decoration:none;color:inherit;
+      border:1.5px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.02),0 16px 55px rgba(0,0,0,.32);padding:28px 20px;position:relative;overflow:hidden;transition:.25s ease;
+    }
+    .choice:before{content:"";position:absolute;inset:-2px;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.08),transparent 52%);opacity:.75;pointer-events:none}
+    .choice:hover{transform:translateY(-5px);border-color:rgba(245,210,75,.65);box-shadow:0 20px 70px rgba(216,38,67,.17),0 0 0 1px rgba(245,210,75,.14)}
+    .icon{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;margin-bottom:22px;font-size:56px;line-height:1;position:relative;z-index:1;box-shadow:0 12px 35px rgba(0,0,0,.32)}
+    .male .icon{background:linear-gradient(135deg,#d82643,#a7132d);color:white}
+    .female .icon{background:linear-gradient(135deg,#f8dc5b,#d1a827);color:white}
+    .choice h2{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:24px;margin:0 0 18px;text-transform:uppercase;position:relative;z-index:1}
+    .male h2{color:#ff405f}.female h2{color:var(--gold)}
+    .choice p{margin:0;color:#c8bdc0;font-size:15px;position:relative;z-index:1}
+    .trust{display:flex;gap:24px;justify-content:center;align-items:center;flex-wrap:wrap;border-top:1px solid rgba(216,38,67,.20);padding-top:30px;margin:0 auto;max-width:720px;color:#ded3d6}
+    .trust span{display:inline-flex;gap:9px;align-items:center;font-size:15px;white-space:nowrap}
+    .check{width:26px;height:26px;border-radius:50%;background:#d82643;color:white;display:inline-grid;place-items:center;font-weight:900;font-size:15px;box-shadow:0 0 22px rgba(216,38,67,.35)}
+    .hint{margin:30px auto 0;max-width:630px;color:#8d7f84;font-size:13px;line-height:1.5}
+    footer{border-top:1px solid rgba(216,38,67,.22);padding:20px 12px;color:#8f7d83;text-align:center;font-size:13px;margin-top:54px}
+    .pulse{animation:pulse 1.9s ease-in-out infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+    @media (max-width:700px){
+      .wrap{padding-top:48px}.cards{grid-template-columns:1fr;gap:18px}.choice{min-height:210px}.sub{margin-bottom:38px}.trust{gap:14px;justify-content:flex-start;text-align:left;padding-left:8px}.trust span{width:100%;justify-content:flex-start}.topbar{font-size:13px;padding:11px 8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">OFERTA EXPIRA HOJE! FALTAM <span id="timer">23:58:46</span></div>
+  <main class="wrap">
+    <p class="brand">Segredo Tântrico</p>
+    <h1>Técnicas de <span class="gold">Massagem Tântrica</span> e Relaxamento</h1>
+    <p class="sub">Escolha abaixo a versão ideal para você acessar o treinamento correto e receber as aulas indicadas para seu objetivo.</p>
+
+    <p class="question">Você é homem ou mulher?</p>
+
+    <section class="cards" aria-label="Escolha seu perfil">
+      <a class="choice male pulse" href="LANDING_HOMEM_AQUI" aria-label="Sou homem, quero acessar a versão para homens">
+        <div class="icon" aria-hidden="true">♂</div>
+        <h2>Homem</h2>
+        <p>Quero aprender técnicas para surpreender minha parceira</p>
+      </a>
+      <a class="choice female" href="LANDING_MULHER_AQUI" aria-label="Sou mulher, quero acessar a versão para mulheres">
+        <div class="icon" aria-hidden="true">♀</div>
+        <h2>Mulher</h2>
+        <p>Quero aprender técnicas para surpreender meu parceiro</p>
+      </a>
+    </section>
+
+    <section class="trust" aria-label="Benefícios">
+      <span><b class="check">✓</b> +15.000 alunos satisfeitos</span>
+      <span><b class="check">✓</b> Acesso imediato</span>
+      <span><b class="check">✓</b> Garantia de 7 dias</span>
+    </section>
+    <p class="hint">Conteúdo educativo para adultos. Ao continuar, você será direcionado para a página correspondente ao seu perfil.</p>
+  </main>
+  <footer>© 2026 Segredo Tântrico — Todos os direitos reservados</footer>
+  <script>
+    const timer = document.getElementById('timer');
+    const end = new Date();
+    end.setHours(23,59,59,999);
+    function tick(){
+      const now = new Date();
+      let diff = Math.max(0, end - now);
+      const h = String(Math.floor(diff / 36e5)).padStart(2,'0');
+      diff %= 36e5;
+      const m = String(Math.floor(diff / 6e4)).padStart(2,'0');
+      diff %= 6e4;
+      const s = String(Math.floor(diff / 1000)).padStart(2,'0');
+      timer.textContent = `${h}:${m}:${s}`;
+    }
+    tick(); setInterval(tick,1000);
+  </script>
+</body>
+</html>
